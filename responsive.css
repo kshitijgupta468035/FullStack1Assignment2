@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+  margin: auto;
+  width: 85%;
+
+  padding: 15px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+@media (min-width: 1201px) {
+  .header {
+    background-color: lightgrey;
+    height: 70px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    display: flex;     /* these three properites are very inportant rember them */
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .content {
+    margin-bottom: 15px;
+  }
+
+  .content::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .left-sidebar {
+    width: 20%;
+    float: left;
+  }
+
+  .nav {
+    height: 300px;
+    background-color: purple;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .news {
+    height: 150px;
+    background-color: chocolate;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-sidebar {
+    width: 78%;
+    height: 465px;
+    float: right;
+    background-color: green;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .footer {
+    background-color: lightsteelblue;
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+}
+
+/* Break point 2 */
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .header {
+    background-color: lightgrey;
+    height: 70px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    display: flex;     /* these three properites are very inportant rember them */
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .content {
+    margin-bottom: 15px;
+  }
+
+  .content::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .left-sidebar {
+    width: 20%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav {
+    order: 2;
+    height: 150px;
+    background-color: chocolate;
+    /* margin-bottom: 15px; */
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .news {
+    order: 1;
+    height: 300px;
+    background-color: purple;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-sidebar {
+    width: 78%;
+    height: 465px;
+    float: right;
+    background-color: green;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .footer {
+    background-color: lightsteelblue;
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+}
+
+
+/* Break point 3 */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    background-color: lightgrey;
+    height: 70px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    display: flex;     /* these three properites are very inportant rember them */
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .content {
+    /* margin-bottom: 15px; */
+  }
+
+  .content::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .left-sidebar {
+    width: 20%;
+    float: left;
+  }
+
+  .nav {
+    height: 465px;
+    width: 100%;
+    background-color: purple;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .news {
+    /* height: 150px;
+    background-color: chocolate;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: none;
+  }
+
+  .right-sidebar {
+    width: 78%;
+    height: 465px;
+    float: right;
+    background-color: green;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .footer {
+    background-color: lightsteelblue;
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+}
+
+/* Break point 4 */
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .header {
+    background-color: lightgrey;
+    height: 70px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    display: flex;     /* these three properites are very inportant rember them */
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .content {
+    /* margin-bottom: 15px; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .left-sidebar {
+    order: 2;
+  }
+
+  .nav {
+    width: 48%;
+    height: 70px;
+    background-color: purple;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .news {
+    width: 48%;
+    height: 70px;
+
+    background-color: chocolate;
+    border-radius: 15px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-sidebar {
+    order: 1;
+    height: 465px;
+    /* float: right; */
+    background-color: green;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+
+  }
+
+  .footer {
+    background-color: lightsteelblue;
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+}
+
+@media (max-width: 480px) {
+  .header {
+    background-color: lightgrey;
+    height: 70px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    display: flex;     /* these three properites are very inportant rember them */
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .content {
+    /* margin-bottom: 15px; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .left-sidebar {
+      order: 2;
+  }
+
+  .nav {
+    order: 1;
+    height: 70px;
+    background-color: purple;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .news {
+    order: 2;
+    height: 70px;
+    background-color: chocolate;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .right-sidebar {
+        order: 1;
+    height: 465px;
+    float: right;
+    background-color: green;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  .footer {
+    background-color: lightsteelblue;
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+}

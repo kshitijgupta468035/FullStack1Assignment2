@@ -1,0 +1,20 @@
+.box {
+  border: 5px solid black;
+  /* height: 100px; */
+    min-width: 40% !important;
+  max-width: 800px;
+
+
+  /* overflow: scroll; */
+  /* overflow: hidden;   Very usefull proerty really we can hide our content
+  overflow: scroll;
+  overflow: visible;
+  overflow: inherit; */
+}
+.hi {
+    border: 5px solid black;
+}
+
+p {
+  background: red;
+}

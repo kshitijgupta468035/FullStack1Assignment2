@@ -1,3 +1,46 @@
 body {
-  background-color: skyblue;
+  margin: 0;
 }
+
+
+span {
+
+  color: red;
+  text-decoration: overline;
+  margin-left:  20px;
+  display: block;
+}
+
+img {
+  display: block;
+}
+
+
+
+.y {
+  font-size: 3rem;
+  color: red;
+  animation-direction: normal;
+}
+
+h1 {
+  color: green;
+  background-color: pink;
+}
+
+
+.red, .green {
+  color: yellow;
+  background-color: red;;
+}
+
+.green {
+  font-size: 34px;
+}
+.red {
+  font-weight: bold;
+}
+/*
+div p {
+  font-size: 2rem;
+} */
